@@ -1,0 +1,10 @@
+body {
+  background: #ff7b54;
+  color: #ffffff;
+  font-family: "Inter", serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

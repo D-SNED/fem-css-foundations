@@ -109,6 +109,10 @@ a {
   display: none;
 }
 
+.close {
+  display: none;
+}
+
 @media (max-width: 1220px) {
   .button {
     font-size: 24px;
@@ -122,18 +126,33 @@ a {
 }
 
 @media (max-width: 840px) {
+  .body--no-scroll {
+    overflow: hidden;
+  }
+
   .menu {
     display: block;
+    cursor: pointer;
+  }
+
+  .menu--hide {
+    display: none;
+  }
+
+  .close--show {
+    display: block;
+    cursor: pointer;
   }
 
   .nav {
     position: absolute;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     background-color: var(--color-primary);
     top: 60px;
-    left: -100%;
+    left: -110%;
     padding-top: 60px;
+    transition: left 0.2s linear;
   }
 
   .nav--visible {
